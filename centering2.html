@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering 2</title>
+
+    <style>
+        /*reset all html elements */
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        html,body {
+            height: 100%;
+
+        }
+
+        body {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 80%;
+            height: 90%;
+            border: 2px solid black;
+        }
+
+        .container2{
+            width: 70px;
+            height: 60px;
+            background-color: greenyellow;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+
+        .container3{
+            width: calc(80%-50%);
+            height: 300px;
+            background-color: white;
+            border: 1px solid black;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container2">
+            <div class="container3">
+                lorem ipsin dolor,
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
