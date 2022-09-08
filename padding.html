@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        .container{
+            width:80%;
+            min-height: 300px;
+            overflow:auto;
+            border: 2px solid black;
+            margin: auto;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"]:first-child{
+            width: 60%;
+            padding: 50px;
+            border: 2px solid red;
+            margin-bottom: 20px;
+
+        }
+
+        input[type="text"]:nth-child(2){
+            width: 50%;
+            padding: 20px 10px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </div>
+</body>
+</html>
