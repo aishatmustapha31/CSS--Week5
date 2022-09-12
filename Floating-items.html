@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Items</title>
+    <style> 
+        .container{
+            width: 80% ;
+            min-height: 400px;
+            overflow: auto;
+            margin: auto;
+            border: 2px solid black;
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        .box1{
+            background-color: aqua;
+            float: right;
+
+        }
+        .box2{
+            background-color: yellowgreen;
+        }
+        .box3{
+            background-color: brown;
+        }
+
+    .clear-fit{
+        clear:both;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="clear-fit"></div>
+
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>

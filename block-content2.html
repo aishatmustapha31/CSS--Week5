@@ -5,8 +5,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        .container{
+            width: 80%;
+            min-height: 400px;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        /* Phone Screen*/
+        
+        @media screen   and (max-width:450px) {
+            .left-panel{
+                width:100%;
+                height: 150px;
+                background-image: url(./images/pexels-farddin-protik-2106463.jpg);
+                background-size: cover;
+                margin-bottom: 5px;
+                display: flex;
+                flex-flow: column;
+                justify-content: flex-end;
+
+            }
+            .left-panel .content-panel {
+                height: 100%;
+                color: white;
+                font-size: small;
+            }
+
+            .right-panel{
+                width: 100%;
+                height: 300px;
+                display: flex;
+                flex-flow: row wrap;
+                gap: 5px;
+                padding-left: 5px;
+
+            }
+
+            .box1{
+                width: calc(47%);
+                height: 150px;
+                background-image: url(./images/pexels-dazzle-jam-1073225.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box1 .content-panel{
+
+                height: 100%;
+                color: white;
+                font-size: smaller;
+                
+            }
+            .box2{
+                width: calc(47%);
+                height: 150px;
+                background-image: url(./images/pexels-fabian-wiktor-994605.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box2 .content-panel{
+                height: 100%;
+                color: white;
+                font-size: smaller;
+            }
+
+            .box3{
+                width: calc(47%);
+                height: 150px;
+                background-image: url(./images/pexels-maycon-marmo-2873674.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box3 .content-panel{
+                height: 100%;
+                color: white;
+                font-size: smaller;
+            }
+
+            .box4{
+                width: calc(47%);
+                height: 150px;
+                background-image: url(./images/pexels-wojciech-kumpicki-2071873.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box4 .content-panel{
+                height: 100%;
+                color: white;
+                font-size: smaller;
+            }
+            
+        }
+
+        /* iPad*/
+        @media screen and (min-width:455px)  and (max-width: 950px)
+
+        /* Laptop Screen */
+
+        @media screen and (min-width:960px) {
+
+            .left-panel{
+                width: 100%;
+                height: 300px;
+                background-image: url(./images/pexels-farddin-protik-2106463.jpg);
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1 ) 2s;
+
+            }
+
+            .left-panel:hover{
+                background-position: 50%;
+            }
+
+            .left-panel .content-panel{
+                height: 100px;
+                color: white;
+            }
+
+            .right-panel{
+                width: 46%;
+                height: 300px;
+                display: flex;
+                flex-flow: row wrap;
+                gap: 5px;
+                padding-left: 5px;
+
+            }
+
+            .box1{
+                width: calc(47% - 10px);
+                height: 150px;
+                background-image: url(./images/pexels-dazzle-jam-1073225.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box1 .content-panel{
+
+                height: 100%;
+                color: white;
+                font-size: smaller;
+                
+            }
+            .box2{
+                width: calc(47% -10px);
+                height: 150px;
+                background-image: url(./images/pexels-fabian-wiktor-994605.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box2 .content-panel{
+                height: 100%;
+                color: white;
+                font-size: smaller;
+            }
+
+            .box3{
+                width: calc(47%-10px);
+                height: 150px;
+                background-image: url(./images/pexels-maycon-marmo-2873674.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box3 .content-panel{
+                height: 100%;
+                color: white;
+                font-size: smaller;
+            }
+
+            .box4{
+                width: calc(47% -10px);
+                height: 150px;
+                background-image: url(./images/pexels-wojciech-kumpicki-2071873.jpg);
+                background-size: cover;
+            }
+
+            .right-panel .box4 .content-panel{
+                height: 100%;
+                color: white;
+                font-size: smaller;
+            }
+            
+        }
+
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="left-panel">
+            <div class="content-panel">
+                <h3>Discover the 10 best things</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum facere eligendi aperiam placeat qui voluptatem doloremque nam veritatis ut. Quod magnam quos corrupti aspernatur id porro vel laboriosam perferendis ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="box1">
+                <div class="content-panel">
+                    <h2> African Models</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+            </div>
+
+
+            <div class="box2">
+                <div class="content-panel">
+                    <h2>Nature</h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+            </div>
+
+
+            <div class="box3">
+                <div class="content-panel">
+                    <h2>African Students</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+            </div>
+
+
+            <div class="box4">
+                <div class="content-panel">
+                    <h2>Wild Life</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
